@@ -1,0 +1,15 @@
+<h2>Register/Login a user</h2>
+<form>
+	<div>
+		<label>User Name</label>
+		<input type="text" name="username" id="username" ng-model="user.name" class="form-control">
+	</div>
+	<div>
+		<label>Password</label>
+		<input type="password" name="password" id="password" ng-model="user.password" class="form-control">
+	</div>
+	<div style="margin-top:10px">
+	<input type="button" name="newuser" value="New User" ng-click="save()" class="btn btn-default">
+	<input type="button" name="login" value="Login" ng-click="login()" class="btn btn-default">
+	</div>
+</form>

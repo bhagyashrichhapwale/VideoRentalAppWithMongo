@@ -1,0 +1,47 @@
+<div class="container-fluid">
+	<div class="row" class="col-md-12">
+	<div class="col-md-6 col-md-offset-3">
+	
+	<h2>Please sign in if you are an existing customer</h2>
+	<form name="signinform" style="margin-top: 30px" novalidate ng-submit="login(signinform.$valid)">
+		
+		<div class="form-group row" ng-class="{ 'has-error' : signinform.name.$invalid && !signinform.name.$pristine }">
+      <label for="password" class="col-md-2 col-form-label" style="font-size: 1.2em;font-weight: normal;">User Name</label>
+      <div class="col-md-10">
+        <input type="text" name="name" class="form-control" placeholder="Enter a user name" ng-model="user.name" required ng-maxlength="20" ng-minlength="6">
+        <p ng-show="signinform.name.$error.required && submitted" class="help-block">User name is required.</p>
+        <p ng-show="signinform.name.$error.minlength && submitted" class="help-block">User name is too short.It can have minimum length of 6 characters.</p>
+        <p ng-show="signinform.name.$error.maxlength && submitted" class="help-block">User name is too long.It can have maximum length of 20 characters.</p>
+
+      </div>
+  </div>
+
+  <div class="form-group row" ng-class="{ 'has-error' : signinform.password.$invalid && !signinform.password.$pristine }">
+        <label for="password" class="col-md-2 col-form-label" style="font-size: 1.2em;font-weight: normal;">Password</label>
+         <div class="col-md-10">
+        <input class="form-control" type="password" placeholder="Enter a password" id="password" required="true" ng-model="user.password" name="password" 
+        ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/">
+        <p ng-show="signinform.password.$error.required && submitted" class="help-block">Password is required.</p>
+        <p ng-show="signinform.password.$error.pattern && submitted" class="help-block">Password should be atleast 8 characters
+            long and should contain one number,one character and one special
+            character.</p>
+        </div>
+  </div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+
+  <div class="alert alert-danger fade in" ng-show=error>
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Error!</strong> {{message}}
+  </div>
+
+  <div class="alert alert-success fade in" ng-show=success>
+      <a href="#" class="close" data-dismiss="alert">&times;</a>
+  <strong>Success!</strong> {{message}}
+  
+    </div>
+    </div>
+
+	</form>
+	</div>
+	</div> 
+</div>

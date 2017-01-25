@@ -1,0 +1,49 @@
+<div class="container-fluid" style="background-color: black">
+<div class="row">
+	<div class="col-md-2 sidebar" style="height:2000px;background-color: black">
+		<ul class="nav nav-sidebar" style="margin-top: 20px">
+			<li class="active"><a ui-sref="newreleases">New Releases<span class="sr-only">(current)</span></a></li>
+			<li><a ui-sref="toprated">Top Rated Movies</a></li>
+			
+			<li><a ui-sref="genreList({genre:1})">Action &amp; Adventure</a></li>
+			<li><a ui-sref="genreList({genre:2})">Anime &amp; Animation</a></li>
+			<li><a ui-sref="genreList({genre:3})">Children &amp; Family</a></li>
+			<li><a ui-sref="genreList({genre:4})">Comedy</a></li>
+			<li><a ui-sref="genreList({genre:5})">Drama</a></li>
+			<li><a ui-sref="genreList({genre:6})">Horror</a></li>
+			<li><a ui-sref="genreList({genre:7})">Romance</a></li>
+			<li><a ui-sref="genreList({genre:8})">Sci-Fi &amp; Fantacy</a></li>
+			<li><a ui-sref="genreList({genre:9})">Sports &amp; Fitness</a></li>
+			<li><a ui-sref="genreList({genre:10})">Thrillers</a></li>
+			<li><a ui-sref="genreList({genre:11})">Foreign</a></li>
+			<li><a ui-sref="genreList({genre:12})">Musicals</a></li>
+			
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="col-sm-10">
+
+
+	 <div class="container" style="width: 100%;height: 2000px;background-color: black">
+	 	 <ol style="float: left;margin-top: 20px">
+            <li ng-repeat="video in videos" style="list-style-type: none;display: inline-block;margin-left: 20px">
+             <div>
+             	<p style="color: white;font-size: 0.9em">{{video.title}}</p>
+             	<p>
+           		<a ui-sref="videodet({id:'{{video._id}}'})"><img ng-src='{{video.imgpath}}'/></a>  
+           		</p>
+             </div>
+                
+            </li>
+        </ol>
+        </div>
+
+	<div ui-view="homeview"></div>
+	</div>
+	</div>
+	</div>
+	

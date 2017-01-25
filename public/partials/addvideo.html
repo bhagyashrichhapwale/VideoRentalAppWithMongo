@@ -1,0 +1,85 @@
+<div class="container-fluid">
+	<div class="row" class="col-md-12">
+	<div class="col-md-6 col-md-offset-3">
+	
+	<h2>Add a new video</h2>
+	<form style="margin-top: 30px">
+		<div class="form-group row">
+  			<label for="title" class="col-md-2 col-form-label" style="font-size: 1.2em;font-weight: normal;">Title</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter a title" id="name" required="true" ng-model="video.title">
+  			</div>
+		</div>
+		<div class="form-group row">
+  			<label for="description" class="col-md-2 col-form-label" style="font-size: 1.2em;font-weight: normal;">Description</label>
+  			<div class="col-md-10">
+    		<textarea class="form-control" rows="3" required="true" ng-model="video.description"></textarea>
+  			</div>
+		</div>
+    <div class="form-group row">
+        <label for="rating" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Release Date</label>
+        <div class="col-md-10">
+        <input class="form-control" type="date" placeholder="Enter the rating" id="releasedate" required="true" ng-model="video.releasedate">
+        </div>
+    </div>
+    <div class="form-group row">
+  			<label for="rating" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Rating</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter the rating" id="rating" required="true" ng-model="video.rating">
+  			</div>
+		</div>
+		<div class="form-group row">
+  			<label for="cast" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Cast</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter the cast" id="cast" required="true" ng-model="video.cast">
+  			</div>
+		</div>
+		<div class="form-group row">
+  			<label for="genre" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Genre</label>
+  			<div class="col-md-10">
+    		<!--input class="form-control" type="text" placeholder="Enter the genre" id="rating" required="true" ng-model="video.genre">
+  			</div!-->
+		    <select class="form-control" ng-model="video.genre">
+          <option value="1">Action &amp; Adventure</option>
+          <option value="2">Anime &amp; Animation</option>
+          <option value="3">Children &amp; Family</option>
+          <option value="4">Comedy</option>
+          <option value="5">Drama</option>
+          <option value="6">Horror</option>
+          <option value="7">Romance</option>
+          <option value="8">Sci-Fi &amp; Fantacy</option>
+          <option value="9">Sports &amp; Fitness</option>
+          <option value="10">Thrillers</option>
+          <option value="11">Foreign</option>
+          <option value="12">Musicals</option>
+        </select> 
+    </div>
+    </div>
+		<div class="form-group row">
+  			<label for="imgpath" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Img Path</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter the img path" id="rating" required="true" ng-model="video.imgpath">
+  			</div>
+		</div>
+			
+		  <button type="submit" class="btn btn-primary" ng-click="save()">Submit</button>
+	</form>
+	</div>
+	</div> 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

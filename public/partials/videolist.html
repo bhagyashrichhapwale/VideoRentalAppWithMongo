@@ -1,0 +1,30 @@
+ 		 <div class="container" style="width: 100%;height: 2000px;background-color: black">
+ 		 <ol style="float: left;margin-top: 20px">
+            <li ng-repeat="video in videos" style="list-style-type: none;display: inline-block;margin-left: 20px">
+             <div>
+             	<p style="color: white;font-size: 0.9em">{{video.title}}</p>
+             	<p>
+           		<a ui-sref="videodet({id:'{{video._id}}'})"><img ng-src='{{video.imgpath}}'/></a>  
+           		</p>
+             </div>
+                
+            </li>
+        </ol>
+        </div>
+
+
+ 		<!--div class="container" style="background-color: black;height: 2000px;width: 100%;">
+ 		<!--div class="container col-md-12"!--
+ 		<h2 style="margin-top: 10px;color: white;font-style: bold">Currently trending videos</h2>
+ 		<div class="row">
+ 		<div  class="col-md-2 col-md-offset-0" ng-repeat="video in videos" style="float: left">
+	 	
+	 	<p style="color: white;font-style: bold;text-align: : center">{{video.title}}</p>
+	 	<p><a ui-sref="videodet({id:'{{video._id}}'})"><img ng-src='{{video.imgpath}}' style="text-align: center;" /></a></p>
+	 	
+	 	</div>
+	 	</div>
+	 	</div!-->
+	 	
+	 	
+	

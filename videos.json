@@ -1,0 +1,215 @@
+{
+    "_id" : ObjectId("587054e1fd29df4a80450c35"),
+    "title" : "Finding Dory",
+    "description" : "Continuing her colorful adventures in Nemo's animated underwater universe, Dory sets out to unravel the mysteries of a past she's completely forgotten, accompanied on her quest by aquatic pals Marlin and Nemo.",
+    "rating" : 4.5,
+    "cast" : "Ellen DeGeneres, Albert Brooks, Hayden Rolence, more...",
+    "genre" : "Family & Children",
+    "releasedate" : "2017-01-02T22:22:48.644Z",
+    "imgpath" : "../images/findingDory.png",
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("587695991a43ebf209fed28f"),
+    "title" : "Sully",
+    "description" : "Viewers around the world were astonished in 2009 when airline pilot Chesley Sullenberger safely landed an Airbus 320 on the Hudson River after both engines were disabled. This fact-based drama illuminates Sullenberger's life and heroic achievement.",
+    "rating" : 4.5,
+    "cast" : "Tom Hanks, Aaron Eckhart, Laura Linney and more...",
+    "genre" : "Adventure",
+    "releasedate" : "2016-11-09T22:22:48.644Z",
+    "imgpath" : "../images/sully.png"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("587696951a43ebf209fed342"),
+    "title" : "Jason Bourne",
+    "description" : "Back for another high-stakes, high-octane thriller, superspy Jason Bourne plays cat and mouse with covert government agencies and terrorist rings while edging closer to unraveling the mystery of his real identity.",
+    "rating" : 3.5,
+    "cast" : "Matt Damon, Julia Stiles, Alicia Vikander, more...",
+    "genre" : "Thriller",
+    "releasedate" : "2016-12-20T22:22:48.644Z",
+    "imgpath" : "../images/jsonbourne.png"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("587696aa1a43ebf209fed352"),
+    "title" : "Storks",
+    "description" : "In this animated avian tale, storks have stopped bringing babies home and started delivering packages for an e-commerce giant instead. But when a stork named Junior creates a baby by mistake, the rush is on to make things right.",
+    "rating" : 3.5,
+    "cast" : " Kelsey Grammer, Andy Samberg, Keegan-Michael Key, more...",
+    "genre" : "Children",
+    "releasedate" : "2017-01-01T22:22:48.644Z",
+    "imgpath" : "../images/storks.png"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("587696fe1a43ebf209fed391"),
+    "title" : "War Dogs",
+    "description" : "Based on a true story, the film follows two friends in their early 20s (Hill and Teller) living in Miami during the Iraq War who exploit a little-known government initiative that allows small businesses to bid on U.S. Military contracts. Starting small, they begin raking in big money and are living the high life. But the pair gets in over their heads when they land a $300 million deal to arm the Afghan Military—a deal that puts them in business with some very shady people, not the least of which turns out to be the U.S. Government.",
+    "rating" : 3.5,
+    "cast" : " Jonah Hill, Miles Teller, Ana de Armas, more...",
+    "genre" : "Thriller",
+    "releasedate" : "2016-04-21T22:22:48.644Z",
+    "imgpath" : "../images/wardogs.png"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("58769a551a43ebf209fed5f0"),
+    "title" : "Deepwater Horizon",
+    "description" : "Replaying the catastrophic explosion of the Deepwater Horizon oil rig in 2010, this tense drama recounts the horrific experiences of the 126 crew members onboard and the numerous acts of courage that saved untold lives.",
+    "rating" : 4,
+    "cast" : "Mark Wahlberg, Kurt Russell, John Malkovich, more...",
+    "genre" : "Adventure",
+    "releasedate" : "2016-06-04T22:22:48.644Z",
+    "imgpath" : "../images/deepwater.png"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("58769aac1a43ebf209fed631"),
+    "title" : "The BFG",
+    "description" : "Roald Dahl's spooky children's book is transformed into a family-friendly fantasy centering on young orphan Sophie, who meets a colossus called the Big Friendly Giant -- who's exiled from his peers for refusing to eat boys and girls.",
+    "rating" : 3.5,
+    "cast" : "Mark Rylance, Ruby Barnhill, Penelope Wilton, more...",
+    "genre" : "Adventure",
+    "releasedate" : "2016-02-08T22:22:48.644Z",
+    "imgpath" : "../images/bfg.png"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5876a14e1a43ebf209fedae8"),
+    "title" : "The Magnificent Seven",
+    "description" : "In this remake of the rousing 1960 Western, a motley group of gunslingers comes together to protect the residents of a mining town, who are being terrorized and victimized by a ruthless gold tycoon and his gang of thugs.",
+    "rating" : 3.5,
+    "cast" : "Denzel Washington, Chris Pratt, Ethan Hawke, more...",
+    "genre" : "Thriller",
+    "releasedate" : "2016-08-16T22:22:48.644Z",
+    "imgpath" : "../images/magseven.png"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5876a19d1a43ebf209fedb1d"),
+    "title" : "Bridget Jones Baby",
+    "description" : "In this third chapter of Bridget's madcap existence, she unexpectedly finds herself pregnant at the age of 43. But with two suitors in her life -- barrister Mark Darcy and dashing tycoon Jack Qwant -- which one is the father?",
+    "rating" : 3.5,
+    "cast" : "Renée Zellweger, Colin Firth, Patrick Dempsey, more...",
+    "genre" : "Comedy",
+    "releasedate" : "2016-09-05T22:22:48.644Z",
+    "imgpath" : "../images/bridget.png"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5876a1ee1a43ebf209fedb5e"),
+    "title" : "The Secret Life of Pets",
+    "description" : "Living an easy life, happy terrier Max sees his world upended when his owner brings home Duke, a mongrel Max regards as a loser. But the two soon find themselves allied against a horde of abandoned pets looking to turn the tables on humans.",
+    "rating" : 3.5,
+    "cast" : "Louis C.K., Eric Stonestreet, Kevin Hart, more...",
+    "genre" : "Comedy",
+    "releasedate" : "2016-03-17T22:22:48.644Z",
+    "imgpath" : "../images/pets.png"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5876a2411a43ebf209fedb96"),
+    "title" : "Pete's Dragon",
+    "description" : "When a mysterious 10-year-old boy, Pete, turns up, claiming to live in the woods with a giant green dragon, it's up to a forest ranger, Grace, and the young Natalie to learn where the boy came from, where he belongs, and the truth about this magical dragon.",
+    "rating" : 3.5,
+    "cast" : "Bryce Dallas Howard, Oakes Fegley, Wes Bentley and more...",
+    "genre" : "Adventure",
+    "releasedate" : "2016-10-29T22:22:48.644Z",
+    "imgpath" : "../images/petes.png"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("587885831a43ebf209001955"),
+    "title" : "Inferno",
+    "description" : "Tom Hanks returns for a third outing as symbologist Robert Langdon. This time, Langdon awakens in an Italian hospital with no memory of the past few days and suddenly finds himself in a race to stop a madman from unleashing a plague on the world.",
+    "rating" : 3.5,
+    "cast" : "Tom Hanks, Felicity Jones, Omar Sy, more...",
+    "genre" : "Thriller",
+    "releasedate" : "2016-10-22T22:22:48.644Z",
+    "imgpath" : "../images/inferno.png"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("587885c31a43ebf20900199f"),
+    "title" : "Snowden",
+    "description" : "n 2013, CIA technical expert Edward Snowden stunned the world by revealing a stolen trove of classified U.S. government documents. This Oliver Stone-helmed drama tells the story of the bold theft that exposed secret NSA mass surveillance programs.",
+    "rating" : 3.5,
+    "cast" : "Joseph Gordon-Levitt, Shailene Woodley, Melissa Leo, more...",
+    "genre" : "Thriller",
+    "releasedate" : "2016-07-19T22:22:48.644Z",
+    "imgpath" : "../images/inferno.png"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5878860a1a43ebf2090019ed"),
+    "title" : "Money Monster",
+    "description" : "Landing in dire financial straits after following a stock tip from bombastic TV persona Lee Gates, fuming Kyle Budwell takes the lout hostage on live television and threatens to kill him unless he turns the stock price around before the closing bell.",
+    "rating" : 3.5,
+    "cast" : "George Clooney, Julia Roberts, Jack O'Connell, more...",
+    "genre" : "Thriller",
+    "releasedate" : "2015-05-10T22:22:48.644Z",
+    "imgpath" : "../images/moneymon.png"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("587886601a43ebf209001a51"),
+    "title" : "London Has Fallen",
+    "description" : "In this follow-up to the thriller Olympus Has Fallen, the U.S. president learns of a planned terrorist attack at the funeral of Britain's prime minister -- an event that will be attended by nearly every Western head of state.",
+    "rating" : 3.5,
+    "cast" : "Gerard Butler, Aaron Eckhart, Morgan Freeman, more...",
+    "genre" : "Thriller",
+    "releasedate" : "2016-05-10T22:22:48.644Z",
+    "imgpath" : "../images/london.png"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("587886b41a43ebf209001aad"),
+    "title" : "Batman v Superman",
+    "description" : "Superegos battle in superhero fashion while a new threat emerges in this sequel to Man of Steel. With Batman decamping Gotham City for Metropolis to take on a Superman who's become too powerful, trouble brews for the rest of humanity.",
+    "rating" : 3.5,
+    "cast" : "Ben Affleck, Henry Cavill, Amy Adams, more...",
+    "genre" : "Science Fiction",
+    "releasedate" : "2016-02-26T22:22:48.644Z",
+    "imgpath" : "../images/batsuper.png"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("587887011a43ebf209001b03"),
+    "title" : "Jack Reacher: Never Go Back",
+    "description" : "After returning to his old Army unit's Virginia headquarters to reconnect with a former colleague, drifter Jack Reacher instead finds himself accused of a murder that occurred 16 years earlier.",
+    "rating" : 3.5,
+    "cast" : "Tom Cruise, Cobie Smulders, Danika Yarosh, more...",
+    "genre" : "Thriller",
+    "releasedate" : "2016-03-01T22:22:48.644Z",
+    "imgpath" : "../images/jackreacher.png"
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5878879a1a43ebf209001baf"),
+    "title" : "Whiskey Tango Foxtrot",
+    "description" : "Based on reporter Kim Barker's memoirs about her experiences covering the Afghanistan war, this satirical look at a hopelessly confused conflict also chronicles the obstacles encountered by female journalists in a rigidly conservative region.",
+    "rating" : 3.5,
+    "cast" : "Tina Fey, Margot Robbie, Martin Freeman, more...",
+    "genre" : "Drama",
+    "releasedate" : "2016-01-17T22:22:48.644Z",
+    "imgpath" : "../images/whiskey.png"
+}

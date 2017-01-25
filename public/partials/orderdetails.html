@@ -1,0 +1,94 @@
+<div class="container-fluid" style="height: 700px;width: 100%">
+<h3 style="">Order Details</h3>
+<div class="alert alert-danger fade in" ng-show=ordernotfound>
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        There are no orders in your queue.
+</div>
+
+ <div class="col-md-6 col-md-offset-3" ng-show=orderfound>
+ <form>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+
+        <input type="text" class="form-control" placeholder="Search" ng-model="searchItem">
+
+      </div>      
+    </div>
+  </form>
+</div>
+
+
+
+<div ng-show=orderfound>
+<table class="table" >
+  <thead>
+    <tr >
+      <th>
+      <a href="#" ng-click="sortType = '_id';sortReverse = !sortReverse " style="color: black">
+      Order Id
+      </a>
+      </th>
+      <th>
+      <a href="#" ng-click="sortType = 'videotitle';sortReverse = !sortReverse " style="color: black">
+      Movie Name
+      <!--span ng-show="sortType == 'videotitle' && !sortReverse" class="fa fa-caret-down"></span>
+      <span ng-show="sortType == 'videotitle' && sortReverse" class="fa fa-caret-up"></span!-->
+      </a>
+      </th>
+      <th>
+      <a href="#" ng-click="sortType = 'dateoforder';sortReverse = !sortReverse" style="color: black">
+      	Date Of Order
+       <!--span ng-show="sortType == 'dateoforder'" class="fa fa-caret-down"></span!-->
+       </a>
+      </th>
+      <th>
+      <a href="#" ng-click="sortType = 'dateofreturn';sortReverse = !sortReverse" style="color: black">
+      Date Of Return
+      <span ng-show="sortType == 'dateofreturn'" class="fa fa-caret-down"></span>
+       </a>
+      </th>
+      <th>
+      <a href="#" ng-click="sortType = 'orderstatus';sortReverse = !sortReverse " style="color: black">
+      Order Status
+       <span ng-show="sortType == 'orderstatus'" class="fa fa-caret-down"></span>
+       </a>
+      </th>
+      <th>Cancel Order</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="order in orders | orderBy:sortType:sortReverse | filter:searchItem">
+      
+      <td>{{order._id}}</td>
+      <td>{{order.videotitle}}</td>
+      <td>{{order.dateoforder | date}}</td>
+      <td>{{order.dateofreturn | date}}</td>
+      <td>{{order.orderstatus}}</td>
+      <td><input type="button" value="Cancel Order" ng-click="cancelOrder(order._id,order.orderstatus)" data-toggle="modal" data-target="#myModal"></td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+	<!-- Modal Content -->
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">{{header}}!!</h4>
+
+		</div>
+		<div class="modal-body">
+			<p>{{message}}</p>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+		</div>
+	</div>
+
+	</div>
+</div>
+
+</div>

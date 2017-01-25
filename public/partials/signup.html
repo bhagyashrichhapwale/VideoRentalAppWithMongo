@@ -1,0 +1,191 @@
+<div class="container-fluid">
+	<div class="row" class="col-md-12">
+	<div class="col-md-6 col-md-offset-3">
+	
+	<h2>Sign up to start your membership</h2>
+	
+  <div class="alert alert-success fade in" ng-show=loginSuccess>
+      <a href="#" class="close" data-dismiss="alert">&times;</a>
+  <strong>Success!</strong> {{succMsg}}
+  </div>
+
+  <form name="signupform" style="margin-top: 30px" novalidate ng-submit="save(signupform.$valid)">
+
+  <div class="form-group row" ng-class="{ 'has-error' : signupform.name.$invalid && !signupform.name.$pristine && !loginSuccess }">
+      <label for="password" class="col-md-2 col-form-label" style="font-size: 1.2em;font-weight: normal;">User Name</label>
+      <div class="col-md-10">
+        <input type="text" name="name" class="form-control" placeholder="Enter a user name" ng-model="user.name" required ng-maxlength="20" ng-minlength="6">
+        <p ng-show="signupform.name.$error.required && submitted" class="help-block">User name is required.</p>
+        <p ng-show="signupform.name.$error.minlength && submitted" class="help-block">User name is too short.It can have minimum length of 6 characters.</p>
+        <p ng-show="signupform.name.$error.maxlength && submitted" class="help-block">User name is too long.It can have maximum length of 20 characters.</p>
+
+      </div>
+  </div>
+
+  <div class="form-group row" ng-class="{ 'has-error' : signupform.password.$invalid && !signupform.password.$pristine && !loginSuccess }">
+        <label for="password" class="col-md-2 col-form-label" style="font-size: 1.2em;font-weight: normal;">Password</label>
+         <div class="col-md-10">
+        <input class="form-control" type="password" placeholder="Enter a password" id="password" required="true" ng-model="user.password" name="password" 
+        ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/">
+        <p ng-show="signupform.password.$error.required && submitted" class="help-block">Password is required.</p>
+        <p ng-show="signupform.password.$error.pattern && submitted" class="help-block">Password should be atleast 8 characters
+            long and should contain one number,one character and one special
+            character.</p>
+        </div>
+  </div>
+
+  <div style="margin-top: 20px;margin-bottom: 20px">
+      <h2>Add your shipping address</h2>
+      <h4 style="margin-top: 10px">Please enter a shipping address where you would like your DVD's delivered</h4>
+    </div>
+
+    <div class="form-group row" ng-class="{ 'has-error' : signupform.firstname.$invalid && !signupform.firstname.$pristine  && !loginSuccess }">
+        <label for="firstname" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">First Name</label>
+        <div class="col-md-10">
+        <input class="form-control" type="text" placeholder="Enter your first name" id="firstname" required="true" ng-model="user.firstname" name="firstname"
+        ng-maxlength="30" ng-minlength="2">
+        <p ng-show="signupform.firstname.$error.required && submitted" class="help-block">First name is required.</p>
+        <p ng-show="signupform.firstname.$error.minlength && submitted" class="help-block">First name is too short.It can have minimum length of 2 characters.</p>
+        <p ng-show="signupform.firstname.$error.maxlength && submitted" class="help-block">First name is too long.It can have maximum length of 30 characters.</p>
+
+        </div>
+    </div>
+    <div class="form-group row" ng-class="{ 'has-error' : signupform.lasttname.$invalid && !signupform.lasttname.$pristine && !loginSuccess  }">
+        <label for="lastname" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Last Name</label>
+        <div class="col-md-10">
+        <input class="form-control" type="text" placeholder="Enter your last name" id="lasttname" ng-model="user.lasttname" name="lasttname" ng-maxlength="40">
+        <p ng-show="signupform.lasttname.$error.maxlength && submitted" class="help-block">First name is too long.It can have maximum length of 40 characters.</p>
+
+        </div>
+    </div>
+    <div class="form-group row" ng-class="{ 'has-error' : signupform.emailid.$invalid && !signupform.emailid.$pristine && !loginSuccess  }">
+        <label for="emailid" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Email Id</label>
+        <div class="col-md-10">
+        <input class="form-control" type="email" placeholder="Enter your email e.g. abc@def.com" id="emailid" required="true" ng-model="user.emailid" name="emailid"
+        ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/">
+        <p ng-show="signupform.emailid.$error.required && submitted" class="help-block">Email is required.</p>
+        <p ng-show="signupform.emailid.$error.pattern && submitted" class="help-block">Incorrect email format.</p>
+        </div>
+    </div>
+    <div class="form-group row" ng-class="{ 'has-error' : signupform.address1.$invalid && !signupform.address1.$pristine && !loginSuccess }">
+        <label for="address1" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Address Line1</label>
+        <div class="col-md-10">
+        <input class="form-control" type="text" placeholder="Enter your address" id="address1" required="true" ng-model="user.address1" name="address1">
+        <p ng-show="signupform.address1.$invalid && submitted" class="help-block">Address is required.</p>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="address2" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Address Line2</label>
+        <div class="col-md-10">
+        <input class="form-control" type="text" placeholder="Enter your address" id="address2" ng-model="user.address2" name="address2">
+        </div>
+    </div>
+    <div class="form-group row" ng-class="{ 'has-error' : signupform.city.$invalid && !signupform.city.$pristine && !loginSuccess }">
+        <label for="city" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">City</label>
+        <div class="col-md-10">
+        <input class="form-control" type="text" placeholder="Enter your city" id="city" required="true" ng-model="user.city" name="city">
+        <p ng-show="signupform.city.$invalid  && submitted" class="help-block">City is required.</p>
+        </div>
+    </div>
+    <div class="form-group row" ng-class="{ 'has-error' : signupform.state.$invalid && !signupform.state.$pristine && !loginSuccess }">
+        <label for="state" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">State</label>
+        <div class="col-md-10">
+        <input class="form-control" type="text" placeholder="Enter your state" id="state" required="true" ng-model="user.state" name="state">
+        <p ng-show="signupform.state.$invalid  && submitted" class="help-block">State is required.</p>
+        </div>
+    </div>
+    <div class="form-group row" ng-class="{ 'has-error' : signupform.zipcode.$invalid && !signupform.zipcode.$pristine && !loginSuccess }">
+        <label for="zipcode" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Zip Code</label>
+        <div class="col-md-10">
+        <input class="form-control" type="text" placeholder="Enter your zip" id="zipcode" required="true" ng-model="user.zipcode" name="zipcode"
+        ng-pattern="/^[0-9]{5}$/" ng-maxlength>
+        <p ng-show="signupform.zipcode.$error.required && submitted" class="help-block">Zip code is required.</p>
+        <p ng-show="signupform.zipcode.$error.pattern && submitted" class="help-block">Zip code should contain exact 5 digits.</p>
+        </div>
+    </div>
+
+
+
+
+ 
+    <!--div class="form-group row" ng-class="{ 'has-error' : signupform.name.$invalid && !signupform.name.$pristine }">
+      <label for="password" class="col-md-2 col-form-label" style="font-size: 1.2em;font-weight: normal;">User Name</label>
+      <div class="col-md-10">
+        <input type="text" name="name" class="form-control" placeholder="Enter a user name" ng-model="user.name" required>
+        <p ng-show="signupform.name.$invalid && !signupform.name.$pristine && submitted" class="help-block">User name is required.</p>
+      </div>
+    </div>
+
+		<div class="form-group row" ng-class="{ 'has-error' : signupform.password.$invalid && !signupform.password.$pristine }">
+  			<label for="password" class="col-md-2 col-form-label" style="font-size: 1.2em;font-weight: normal;">Password</label>
+  			 <div class="col-md-10">
+    		<input class="form-control" type="password" placeholder="Enter a password" id="password" required="true" ng-model="user.password" name="password">
+        <p ng-show="signupform.password.$invalid && !signupform.password.$pristine && submitted" class="help-block">Password is required.</p>
+  			</div>
+		</div>
+
+		<div style="margin-top: 20px;margin-bottom: 20px">
+			<h2>Add your shipping address</h2>
+			<h4 style="margin-top: 10px">Please enter a shipping address where you would like your DVD's delivered</h4>
+		</div>
+
+		<div class="form-group row" ng-class="{ 'has-error' : signupform.firstname.$invalid && !signupform.firstname.$pristine }">
+  			<label for="firstname" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">First Name</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter your first name" id="firstname" required="true" ng-model="user.firstname" name="firstname">
+        <p ng-show="signupform.firstname.$invalid && !signupform.firstname.$pristine && submitted" class="help-block">First name is required.</p>
+  			</div>
+		</div>
+		<div class="form-group row" ng-class="{ 'has-error' : signupform.lasttname.$invalid && !signupform.lasttname.$pristine }">
+  			<label for="lastname" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Last Name</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter your last name" id="lasttname" ng-model="user.lasttname" name="lasttname">
+        <p ng-show="signupform.lasttname.$invalid && !signupform.lasttname.$pristine && submitted" class="help-block">Last name is required.</p>
+  			</div>
+		</div>
+		<div class="form-group row" ng-class="{ 'has-error' : signupform.emailid.$invalid && !signupform.emailid.$pristine }">
+  			<label for="emailid" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Email Id</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="email" placeholder="Enter your email" id="emailid" required="true" ng-model="user.emailid" name="emailid">
+        <p ng-show="signupform.emailid.$invalid && !signupform.emailid.$pristine && submitted" class="help-block">Email is required.</p>
+  			</div>
+		</div>
+		<div class="form-group row" ng-class="{ 'has-error' : signupform.address1.$invalid && !signupform.address1.$pristine }">
+  			<label for="address1" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Address Line1</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter your address" id="address1" required="true" ng-model="user.address1" name="address1">
+        <p ng-show="signupform.address1.$invalid && !signupform.address1.$pristine && submitted" class="help-block">Address is required.</p>
+  			</div>
+		</div>
+		<div class="form-group row">
+  			<label for="address2" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Address Line2</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter your address" id="address2" ng-model="user.address2" name="address2">
+  			</div>
+		</div>
+		<div class="form-group row" ng-class="{ 'has-error' : signupform.city.$invalid && !signupform.city.$pristine }">
+  			<label for="city" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">City</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter your city" id="city" required="true" ng-model="user.city" name="city">
+        <p ng-show="signupform.city.$invalid && !signupform.city.$pristine && submitted" class="help-block">City is required.</p>
+  			</div>
+		</div>
+		<div class="form-group row" ng-class="{ 'has-error' : signupform.state.$invalid && !signupform.state.$pristine }">
+  			<label for="state" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">State</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter your state" id="state" required="true" ng-model="user.state" name="state">
+        <p ng-show="signupform.state.$invalid && !signupform.state.$pristine && submitted" class="help-block">State is required.</p>
+  			</div>
+		</div>
+		<div class="form-group row" ng-class="{ 'has-error' : signupform.zipcode.$invalid && !signupform.zipcode.$pristine }">
+  			<label for="zipcode" class="col-md-2 col-form-label" style="font-size: 1.1em;font-weight: normal;">Zip Code</label>
+  			<div class="col-md-10">
+    		<input class="form-control" type="text" placeholder="Enter your zip" id="zipcode" required="true" ng-model="user.zipcode" name="zipcode">
+        <p ng-show="signupform.zipcode.$invalid && !signupform.zipcode.$pristine && submitted" class="help-block">Zip code is required.</p>
+  			</div>
+		</div!-->	
+		  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	</div>
+	</div> 
+</div>
